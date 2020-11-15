@@ -1,4 +1,5 @@
 const express = require("express");
+const intervalSetting = require('./interval');
 
 const app = express();
 
@@ -13,3 +14,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log("Server started on port 5000");
 })
+
+intervalSetting();
